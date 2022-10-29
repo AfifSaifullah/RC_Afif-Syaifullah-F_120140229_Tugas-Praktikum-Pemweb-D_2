@@ -1,0 +1,210 @@
+<!--Link Contoh : https://p1hcrv.csb.app/-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minggu 2</title>
+
+  <style>
+    body{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .horizontal{
+      display: flex;
+    }
+
+    header{
+      width: 100%;
+      background-color: aliceblue;
+      border-radius: 20px;
+    }
+
+    #judul_header{
+      padding: 30px;
+      text-align: left;
+    }
+
+    h2{
+      padding: 10px;
+      color: azure;
+      width: max-content;
+      background-color: rgb(39, 136, 120);
+    }
+
+    aside{
+      width: 100%;
+    }
+
+    ul{
+      padding: 10px;
+      text-align: right;
+      margin-top: 0px;
+      list-style-position: inside;
+      background-color: rgb(39, 136, 120);
+    }
+
+    li{
+      display: inline;
+      margin-right: 20px;
+    }
+
+    a{
+      color: azure;
+    }
+    
+    #deskripsi{
+      max-width: max-content;
+      padding: 20px;
+      text-align: justify;
+      background-color: aliceblue;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    #deskripsi::first-letter{
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: rgb(42, 161, 165);
+    }
+
+    th{
+      padding: 5px;
+      background-color: rgb(157, 171, 184);
+      color: azure;
+    }
+
+    td{
+      background-color: azure;
+      padding: 10px;
+    }
+    
+    .form_kontak{
+      padding: 30px;
+      width: 300px;
+      background-color: rgb(178, 226, 233);
+      border-radius: 20px;
+    }
+
+    section{
+      margin-left: 30px;
+    }
+
+    input[type=submit]{
+      padding: 5px;
+      margin-top: 50px;
+      width: 100%;
+      border-radius: 20px;
+      background-color: rgb(42, 161, 165);
+      color:azure;
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <header class="horizontal">
+    <img src="https://images.unsplash.com/photo-1518270444395-285fb1a25728?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="My original chara artwork" height="200px"/>
+    <div id="judul_header">
+      <h1>Hai, Saya Afif Syaifullah Fattah.</h1>
+      <p>Seorang mahassiwa IF Itera</p>
+    </div>
+  </header>
+
+  <aside>
+    <nav>
+      <ul>
+        <li><a href="#tentang">Tentang Saya</a></li>
+        <li><a href="#kerja">Pengalaman Kerja</a></li>
+        <!-- <li><a href="#">pendidikan</a></li>
+              <li><a href="#">setifikasi</a></li> -->
+        <li><a href="#hubungi">Hubungi Saya</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+    <h2 id="tentang"># Tentang Saya</h2>
+    <section>
+      <div class="horizontal">
+        <p id="deskripsi">
+          Nama saya Afif Syaifullah Fattah, saya adalah mahasiswa IF dari Itera dengan NIM 12014022. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ipsum cum doloribus repellat dolorem, dolor ut saepe omnis veritatis earum quod ab. Possimus iste repudiandae optio ducimus! Quam, aliquam fugit?
+        </p>
+        <figure>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/yMUZwsLs4Es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <figcaption>Video saya</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <h2 id="kerja"># Pengalaman Kerja</h2>
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2">No</th>
+            <th rowspan="2">Posisi</th>
+            <th rowspan="2">Perusahaan</th>
+            <th colspan="2">Waktu</th>
+          </tr>
+          <tr>
+            <th>Mulai</th>
+            <th>Selesai</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Melatih materi KSN Bidang Informatika di SMA Al-Kautsar</td>
+            <td>-</td>
+            <td>2020</td>
+            <td>2021</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <h2 id="hubungi"># Hubungi Saya</h2>
+    <section>
+      <div class="form_kontak">
+        <form action="#" method="get">
+          <label for="nama">Nama:</label>
+          <div>
+            <input type="text" name="nama" id="nama">
+          </div>
+
+          <p>Sudah nonton film saya?</p>
+          <div class="horizontal">
+            <input type="radio" name="sudah" id="sudah">
+            <label for="sudah">Sudah</label>
+            <br>
+            <input type="radio" name="belum" id="belum">
+            <label for="belum">Belum</label>
+          </div>
+          <br>
+
+          <p>Apa coba?</p>
+          <div class="horizontal">
+            <input type="checkbox" name="ini" id="ini">
+            <label for="ini">ini</label><br>
+            <input type="checkbox" name="itu" id="itu">
+            <label for="itu">itu</label><br>
+            <input type="checkbox" name="anu" id="anu">
+            <label for="anu">anu</label>
+          </div>
+
+          <div>
+            <input type="submit" value="KIRIM">
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>End</p>
+  </footer>
+</body>
+</html>
